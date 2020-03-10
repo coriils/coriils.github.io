@@ -3,17 +3,17 @@
 ## roadmap (in true pm style)
 ### must haves
 - add static portfolio content (pm/strategy, writing (technical/blog content/research), teaching/outreach (STEM), personal (travel))
-- add page for downloadable resume
-- add dynamic blog setup
+- setup blog
 - import notable medium blog posts
-- create custom portfolio content
+- create custom portfolio content (project retros)
+
 ### should haves
 - explore templates and add any relevant ones
-- explore css file and change colours/font
+- explore css file and customize colours/font
 
 ### nice to haves
-- change socials to include substack, clippings
-- add custom domain (add it to your repository's "Custom domain" settings on github.com. And then register and/or [configure your domain with a DNS provider](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/))
+- change social icons to include substack, clippings
+- add custom domain properly (add it to your repository's "Custom domain" settings on github.com. And then register and/or [configure your domain with a DNS provider](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/))
 
 ## Personal reference
 ### Quick configuration changes
@@ -25,32 +25,6 @@ Most customizations can be done in a matter of seconds, by revising your reposit
 
 
 #### Social media
-
-Your website supports linking and sharing to social media services you're using, including Behance, Dribbble, Facebook, LinkedIn, Medium, Stack Overflow, Twitter, and YouTube. To identify the services you use:
-
-1. Edit your repository's `_config.yml` file.
-2. Edit the `social_media` dictionary line, and represent the services you like in a simple `key: value` form:
-
-```
-social_media:
-  behance: your_username
-  dribbble: your_username  
-  facebook: your_username
-  hackerrank: your_username
-  instagram: your_username
-  keybase: your_username
-  linkedin: your_username
-  medium: your_username
-  stackoverflow: your_user_id
-  telegram: your_username
-  twitter: your_username
-  unsplash: your_username
-  vk: your_username
-  website: http://your_website_url
-  youtube: your_username
-```
-
-Links to your profile for each of the services you define will appear in the `<header>` of your website, appended to your bio. And if those services support sharing, any blog posts that you publish will include links to share that post using each social media service.
 
 **Note**: This feature is supported by two files in your repository:
 
@@ -103,13 +77,13 @@ Jekyll's conventions for authoring and managing blog posts is very flexible. You
 To give you a sound foundation to start your personal website, your repository includes a handful of "includes" -- dynamic `.html` files that are re-used throughout your website. They're all stored in the `/_includes/` directory.
 
 There are the usual suspects, like `header.html` and `footer.html`. But there are few more worth pointing out:
-
-- `interests.html`: A heading and dynamic list of "My Interests," which is populated with the [topics](#topics) you list in your `_config.yml`.
-- `masthead.html`: A collection of your avatar, name, bio, and other metadata that's displayed prominently on all your webpages to help identify what the website is about.
+- `thoughts.html`: A heading and dynamic list of "My Thoughts," which is populated with a listing of your latest blog posts.
 - `post-card.html`: A compact, summarized presentation of a blog post, re-used to display a listing of your latest blog posts.
+
+- `masthead.html`: A collection of your avatar, name, bio, and other metadata that's displayed prominently on all your webpages to help identify what the website is about.
 - `projects.html`: A heading and dynamic list of "My Projects," which is populated with a listing of your newest GitHub repositories.
 - `repo-card.html`: A compact, summarized presentation of a repository, re-used to display a listing of your GitHub repositories.
-- `thoughts.html`: A heading and dynamic list of "My Thoughts," which is populated with a listing of your latest blog posts.
+- `interests.html`: A heading and dynamic list of "My Interests," which is populated with the [topics](#topics) you list in your `_config.yml`.
 - `topic-card.html`: A compact, summarized presentation of a topic (defined in your `_config.yml`), re-used to display a listing of your interests.
 
 ### Layouts

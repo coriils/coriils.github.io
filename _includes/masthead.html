@@ -8,7 +8,7 @@
 <h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
 <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
   {{ user.bio }}
-  primary: writer; secondary: planner
+  primary: writer; secondary: planner ✨
 </p>
 
 {% if include.metadata %}
@@ -22,7 +22,7 @@
       </div>
     {% endif %}
 -->
-    {% if user.email %}
+<!--    {% if user.email %}
       <div class="{{ metadata_styles }}">
         {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
         <a href="mailto:{{ serena.chao@alumni.ubc.ca }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
@@ -30,7 +30,7 @@
         </a>
       </div>
     {% endif %}
-<!--    {% if user.location %}
+    {% if user.location %}
       <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
         {{ user.location }}
@@ -50,8 +50,9 @@
         {% endfor %}
       </div>
     {% endif %}
-    {% if user.hireable %}
+<!--    {% if user.hireable %}
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}
+-->
   </div>
 {% endif %}
