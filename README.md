@@ -2,8 +2,7 @@
 
 ## roadmap (in true pm style)
 ### must haves
-- change socials to include substack, remove "website"
-- add static portfolio content
+- add static portfolio content (pm/strategy, writing (technical/blog content/research), teaching/outreach (STEM), personal (travel))
 - add page for downloadable resume
 - add dynamic blog setup
 - import notable medium blog posts
@@ -11,6 +10,9 @@
 ### should haves
 - explore templates and add any relevant ones
 - explore css file and change colours/font
+
+### nice to haves
+- change socials to include substack, clippings
 - add custom domain (add it to your repository's "Custom domain" settings on github.com. And then register and/or [configure your domain with a DNS provider](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/))
 
 ## Personal reference
